@@ -10,7 +10,7 @@ const postcss = require('gulp-postcss');
 const concat = require('gulp-concat');
 const imagemin = require('gulp-imagemin');
 // import imagemin from 'gulp-imagemin';
-const svgmin = require('gulp-svgmin');
+// const svgmin = require('gulp-svgmin');
 // import svgmin from 'gulp-svgmin';
 
 //Шляхи до файлів з якими ми працюватимемо (девелопмент файли)
@@ -76,13 +76,13 @@ exports.buildImages = buildImages;
 
 //svg
 
-function buildSvg(){
-	return gulp.src(files.svgPath)
-	.pipe(svgmin())
-	.pipe(gulp.dest('dist/icons'))
-}
+// function buildSvg(){
+// 	return gulp.src(files.svgPath)
+// 	.pipe(svgmin())
+// 	.pipe(gulp.dest('dist/icons'))
+// }
 
-exports.buildSvg = buildSvg;
+// exports.buildSvg = buildSvg;
 
 //watch task
 function watchStyles() {
@@ -115,10 +115,10 @@ function serve(cb) {
 
 exports.serve = serve;
 
-exports.dev = gulp.parallel(watchStyles, watchScripts, buildImages, buildSvg, serve);
+exports.dev = gulp.parallel(watchStyles, watchScripts, buildImages, serve);
 
 //Deafult task
 exports.default = gulp.series(
 	clear,
-	gulp.parallel(buildStyles, buildScripts, buildImages, buildSvg)
+	gulp.parallel(buildStyles, buildScripts, buildImages)
 );
