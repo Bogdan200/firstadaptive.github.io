@@ -1,0 +1,102 @@
+@import "variables";
+
+@mixin background-properties {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-clip: content-box;
+}
+
+@mixin font-logo {
+    font-family: Lato;
+font-size: 24px;
+font-weight: 500;
+line-height: 16px;
+color: $color-purple;
+text-decoration:none;
+}
+
+@mixin font-title {
+    font-family: Montserrat;
+font-weight: 700;
+color: white;
+}
+
+@mixin font-nav {
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 16px;
+text-decoration: none;
+color: $color-purple;
+}
+
+@mixin font-description {
+    font-family: Lato;
+font-weight: 400;
+color: $color-purple;
+}
+
+@mixin font-gray {
+    font-family: Montserrat;
+font-weight: 400;
+color: $color-light-gray;
+}
+
+@mixin font-logo {
+    font-family: Lato;
+font-weight: 700;
+font-size:24px;
+color: $color-purple;
+text-decoration: none;
+}
+
+@mixin font-testimonials-description {
+    font-family: Lato;
+font-weight: 700;
+font-size: 16px;
+font-style: italic;
+color: white;
+text-align:center;
+line-height: 24px;
+}
+
+@mixin font-testimonials-end {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: $color-light-purple;
+}
+
+@mixin button-shape {
+    text-align: center;
+    padding: 13px 20px 11px 20px;
+    background-color: $color-purple;
+    border-radius: 25px;
+}
+
+@mixin button-link {
+    &__link {
+        padding-top: 5px;
+        @include font-nav;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@mixin content-width {
+    width:90vw;
+    padding: 20px 10px;
+    margin:auto;
+    max-width: 1200px;
+}
+
+@mixin font-nav-mobile {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 26px;
+
+}

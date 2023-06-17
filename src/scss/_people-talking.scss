@@ -1,0 +1,87 @@
+@import 'mixins';
+@import 'variables';
+.people-talking {
+    background: url(./../../dist/img/testmonials-bg.png);
+    @include background-properties;
+
+    &-header {
+        @include font-title;
+        text-align:center;
+        font-size: 48px;
+        line-height: 50px;
+        padding: 100px 0 50px 0;
+        margin:auto;
+        @media (max-width: $max-tablet-width) {
+            font-size:42px;
+            line-height:44px;
+            padding: 85px 10px 20px 10px;
+            margin:auto;
+        }
+        @media (max-width: $max-mobile-width) {
+            font-size:32px;
+            line-height:48px;
+            width: 80%;
+            padding: 25px 10px 10px 10px;
+            margin:auto;
+        }
+       
+    }
+    &-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       @include content-width;
+        &__element {
+            padding: 10px;
+            width:100%;
+            @media (max-width: $max-mobile-width) {
+                width: 100%;
+                padding: 10px;
+            }
+            @media (min-width: $min-tablet-width) {
+                width: 45%;
+            }
+            @media (min-width: $min-desktop-width) {
+                width: 30%;
+            }
+        }
+        &__description {
+            width: 100%;
+            padding-bottom: 10px;
+            @include font-testimonials-description;
+            
+        }
+        &__img-wrapper {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height: 80px;
+        }
+    }
+    &-description {
+        @include font-testimonials-end;
+        padding-top: 30px;
+        padding-bottom:30px;
+        @media (max-width: $max-mobile-width) {
+            width: 100%;
+        }
+        @media (max-width: $max-tablet-width) {
+            width: 80vw;
+        }
+        @media (min-width: $min-desktop-width) {
+           width: 65vw;
+            max-width: 880px;
+        }
+        margin:auto;
+        &::after {
+            content: "";
+            position:relative;
+            top: 15px;
+            display:block;
+            height:0;
+            margin:auto;
+            width: 80%;
+            border:1px solid $color-pseudoelem;
+        }
+    }
+}
