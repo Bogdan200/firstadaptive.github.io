@@ -5,120 +5,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/reset.css">
-    <link rel="stylesheet" href="./dist/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <title>Forkio</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="revolutionary">
-            <h2 class="revolutionary__title">Revolutionary editor</h2>
-            <p class="revolutionary__subtitle">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet
-                vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
-            <ul class="buttons">
-                <li class="watch">
-                    <img src="./src/icons/Screenshot_1.png" alt="">
-                </li>
-                <li class="star">
-                    <img src="./src/icons/Screenshot_2.png" alt="">
-                </li>
-                <li class="fork">
-                    <img src="./src/icons/Screenshot_3.png" alt="">
-                </li>
-            </ul>
-        </div>
-        <div class="what-you-get">
-            <h2 class="what-title">&lt;Here is what you get&gt;</h2>
-            <div class="first-wrapper">
-                <img src="./src/icons/icon1.png" alt="" class="image extra" >
-                <div class="first-wrapper__margin">
-                <h3 class="first-wrapper__title">Creatred to Make The Web Better</h3>
-                <p class="first-wrapper__discription">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
-                    dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
-                </div>
+   
+    <section class="intro-container">
+       <div class="top-container-wrapper"><div class="top-container">
+            <div class="logo">
+                <img class="logo__img" src="./dist/img/logo.png" alt="logo">
+                <img class="logo__img--hover" src="./dist/img/logo-hover.png" alt="logo">
+                <a href="#" class="logo__title">FORKIO</a>
             </div>
-            <div class="second-wrapper">
-                <img src="./src/icons/icon2.png" alt="" class="image">
-                <div class="second-wrapper__margin">
-                <h3 class="second-wrapper__title">Incredibly Powerful Tool</h3>
-                <p class="second-wrapper__discription">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                    felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
-                    erat volutpat.</p>
-                </div>
+            <div class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item"><a href="" class="navigation-list__link">Overview</a></li>
+                    <li class="navigation-list__item"><a href="" class="navigation-list__link">About Fork</a></li>
+                    <li class="navigation-list__item"><a href="" class="navigation-list__link">Buying Options</a></li>
+                    <li class="navigation-list__item"><a href="" class="navigation-list__link">Support</a></li>
+                </ul>
             </div>
-            <div class="third-wrapper">
-                <img src="./src/icons/icon3.png" alt="" class="image">
-                <div class="third-wrapper__margin">
-                <h3 class="third-wrapper__title">Experimental Stuff</h3>
-                <p class="third-wrapper__discription">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                    felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
-                    erat volutpat.</p>
-                </div>
+            <div class="buy-button"><a href="#" class="buy-button__link">Buy Now</a></div>
+            <div class="menu-icon"><svg class="menu-icon--idle" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                    style="enable-background:new 0 0 512 512; transform: rotate(180deg); fill:white; height: 35px; width: 40px;"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M28.4,113.8h455.1c15.7,0,28.4-12.7,28.4-28.4c0-15.7-12.7-28.4-28.4-28.4H28.4C12.7,56.9,0,69.6,0,85.3
+                   C0,101,12.7,113.8,28.4,113.8z M28.4,284.4h455.1c15.7,0,28.4-12.7,28.4-28.4c0-15.7-12.7-28.4-28.4-28.4H28.4
+                   C12.7,227.6,0,240.3,0,256C0,271.7,12.7,284.4,28.4,284.4z M28.4,455.1h199.1c15.7,0,28.4-12.7,28.4-28.4
+                   c0-15.7-12.7-28.4-28.4-28.4H28.4C12.7,398.2,0,411,0,426.7C0,442.4,12.7,455.1,28.4,455.1z" />
+                    </g>
+                </svg>
+                <svg class="menu-icon--open" version="1.1" id="Layer_1" 
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; fill:white; height: 35px; width: 40px;" xml:space="preserve">
+           <g>
+               <path d="M283.8,256L506.2,33.6c7.7-7.7,7.7-20.2,0-27.8c-7.7-7.7-20.2-7.7-27.8,0L256,228.2L33.6,5.8c-7.7-7.7-20.2-7.7-27.8,0
+                   c-7.7,7.7-7.7,20.2,0,27.8L228.1,256L5.8,478.4c-7.7,7.7-7.7,20.2,0,27.8c3.9,3.9,8.9,5.7,13.9,5.7s10.1-1.9,13.9-5.7L256,283.8
+                   l222.4,222.4c3.9,3.9,8.9,5.7,13.9,5.7s10.1-1.9,13.9-5.7c7.7-7.7,7.7-20.2,0-27.8L283.8,256L283.8,256z"/>
+           </g>
+           </svg>
             </div>
-            <div class="fourth-wrapper">
-                <img src="./src/icons/icon4.png" alt="" class="image">
-                <div class="fourth-wrapper__margin">
-                <h3 class="fourth-wrapper__title">Creatred to Make The Web Better</h3>
-                <p class="fourth-wrapper__discription">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
-                    felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
-                    erat volutpat.</p>
-                </div>
-            </div>
-            <picture class="menu-image">
-                <source media="(min-width: 1200px)" srcset="./dist/image/editor1.jpg">
-                <source media="(min-width: 768px)" srcset="./dist/image/editor2.jpg">
-                <source media="(max-width: 767px)" srcset="./dist/image/editor3.jpg">
-                <img src="./src/icons/icon2.png" alt="Alternate Text">
-                
-            </picture>
-        </div>
-           
-        
-        <div class="subscription">
-            <h2 class="subscription__title">Fork Subscription Pricing</h2>
-            <ul class="subscription__list">
-                <li class="list__prices">
-                    <p class="prices__title">Students</p>
-                    <p class="prices__cost">$29</p>
-                    <p class="prices__cost-addition">per month</p>
-                    <p class="prices__discription">Personal License</p>
-                    <div class="padding-button">
-                    <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
-                    </div>
-                </li>
-                <li class="list__prices">
-                    <p class="prices__title">professional</p>
-                    <p class="prices__cost">$59</p>
-                    <p class="prices__cost-addition">per Month</p>
-                    <p class="prices__discription">Professional License Email Support</p>
-                    <div class="padding-button">
-                    <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
-                    </div>
-                </li>
-                <li class="list__prices">
-                    <p class="prices__title">agency</p>
-                    <p class="prices__cost">$99</p>
-                    <p class="prices__cost-addition">per month</p>
-                    <p class="prices__discription">1-12 Team Members Phone Support</p>
-                    <div class="padding-button">
-                    <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
-                </div>
-                </li>
-                <li class="list__prices">
-                    <p class="prices__title">enterprise</p>
-                    <p class="prices__cost">$159</p>
-                    <p class="prices__cost-addition">per month</p>
-                    <p class="prices__discription">Unlimited Team Members 24/ 7 Phone Support</p>
-                    <div class="padding-button">
-                    <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
-                </div>
-                </li>
-            </ul>
+            <div class="menu-icon--open"></div>
         </div>
     </div>
+        <div class="title-container">
+            <h1 class="title">Fork App</h1>
+            <p class="title-description">A real gamechanger in the world of web development</p>
+            <p class="title-description__v">v. 2.8 For Mac and Windows</p>
+        </div>
+    </div>
+    </section>
+    <div class="free-download-button-wrapper">
+        <div class="free-download-button"><a href="" class="free-download-button__link">Download For Free Now</a></div>
+        <p class="free-download-button__description">Unlimited 30-Day Trial Period</p>
+        </div>
+        <div class="container">
+            <div class="revolutionary">
+                <h2 class="revolutionary__title">Revolutionary editor</h2>
+                <p class="revolutionary__subtitle">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet
+                    vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                <ul class="buttons">
+                    <li class="watch">
+                        <img src="./src/icons/Screenshot_1.png" alt="">
+                    </li>
+                    <li class="star">
+                        <img src="./src/icons/Screenshot_2.png" alt="">
+                    </li>
+                    <li class="fork">
+                        <img src="./src/icons/Screenshot_3.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="what-you-get">
+                <h2 class="what-title">&lt;Here is what you get&gt;</h2>
+                <div class="first-wrapper">
+                    <img src="./src/icons/icon1.png" alt="" class="image extra" >
+                    <div class="first-wrapper__margin">
+                    <h3 class="first-wrapper__title">Creatred to Make The Web Better</h3>
+                    <p class="first-wrapper__discription">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra
+                        dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                    </div>
+                </div>
+                <div class="second-wrapper">
+                    <img src="./src/icons/icon2.png" alt="" class="image">
+                    <div class="second-wrapper__margin">
+                    <h3 class="second-wrapper__title">Incredibly Powerful Tool</h3>
+                    <p class="second-wrapper__discription">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                        felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
+                        erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="third-wrapper">
+                    <img src="./src/icons/icon3.png" alt="" class="image">
+                    <div class="third-wrapper__margin">
+                    <h3 class="third-wrapper__title">Experimental Stuff</h3>
+                    <p class="third-wrapper__discription">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                        felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
+                        erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="fourth-wrapper">
+                    <img src="./src/icons/icon4.png" alt="" class="image">
+                    <div class="fourth-wrapper__margin">
+                    <h3 class="fourth-wrapper__title">Creatred to Make The Web Better</h3>
+                    <p class="fourth-wrapper__discription">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                        felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
+                        erat volutpat.</p>
+                    </div>
+                </div>
+                <picture class="menu-image">
+                    <source media="(min-width: 1200px)" srcset="./dist/image/editor1.jpg">
+                    <source media="(min-width: 768px)" srcset="./dist/image/editor2.jpg">
+                    <source media="(max-width: 767px)" srcset="./dist/image/editor3.jpg">
+                    <img src="./src/icons/icon2.png" alt="Alternate Text">
+                    
+                </picture>
+            </div>
+    <section class="people-talking">
+        <h2 class="people-talking-header">People Are Talking About Fork</h2>
+        <div class="people-talking-flexbox">
+            <div class="people-talking-flexbox__element">
+                <div class="people-talking-flexbox__img-wrapper"><img src="./dist/img/smashing-mag.png" alt="smashing-mag" class="people-talking-flexbox__img"></div>
+                <p class="people-talking-flexbox__description">Sed vestibulum scelerisque urna, eu finibus leo facilisis
+                    sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+            </div>
+            <div class="people-talking-flexbox__element">
+                <div class="people-talking-flexbox__img-wrapper"><img src="./dist/img/codrops.png" alt="codrops" class="people-talking-flexbox__img"></div>
+                <p class="people-talking-flexbox__description">Donec euismod dolor ut ultricies consequat. Vivamus urna
+                    ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+            </div>
+            <div class="people-talking-flexbox__element">
+                <div class="people-talking-flexbox__img-wrapper"><img src="./dist/img/wlogo.png" alt="wlogo" class="people-talking-flexbox__img"></div>
+                <p class="people-talking-flexbox__description">In efficitur in velit et tempus. Duis nec odio dapibus,
+                    suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+            </div>
+            <div class="people-talking-flexbox__element">
+                <div class="people-talking-flexbox__img-wrapper"><img src="./dist/img/pixel-buddha.png" alt="pixel-buddha" class="people-talking-flexbox__img"></div>
+                <p class="people-talking-flexbox__description">Sed vestibulum scelerisque urna, eu finibus leo facilisis
+                    sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+            </div>
+            <div class="people-talking-flexbox__element">
+                <div class="people-talking-flexbox__img-wrapper"><img src="./dist/img/cblogo.png" alt="cblogo" class="people-talking-flexbox__img"></div>
+                <p class="people-talking-flexbox__description">Praesent ut eros tristique, malesuada lectus vel,
+                    lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </p>
+            </div>
+            <div class="people-talking-flexbox__element">
+                <div class="people-talking-flexbox__img-wrapper"><img src="./dist/img/tnwlogo.png" alt="tnwlogo" class="people-talking-flexbox__img"></div>
+                <p class="people-talking-flexbox__description">Fusce pharetra erat id odio blandit, nec pharetra eros
+                    venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
+            </div>
+            <p class="people-talking-description">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
+                facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec
+                elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+    </section>
+    <div class="subscription">
+        <h2 class="subscription__title">Fork Subscription Pricing</h2>
+        <ul class="subscription__list">
+            <li class="list__prices">
+                <p class="prices__title">Students</p>
+                <p class="prices__cost">$29</p>
+                <p class="prices__cost-addition">per month</p>
+                <p class="prices__discription">Personal License</p>
+                <div class="padding-button">
+                <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
+                </div>
+            </li>
+            <li class="list__prices">
+                <p class="prices__title">professional</p>
+                <p class="prices__cost">$59</p>
+                <p class="prices__cost-addition">per Month</p>
+                <p class="prices__discription">Professional License Email Support</p>
+                <div class="padding-button">
+                <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
+                </div>
+            </li>
+            <li class="list__prices">
+                <p class="prices__title">agency</p>
+                <p class="prices__cost">$99</p>
+                <p class="prices__cost-addition">per month</p>
+                <p class="prices__discription">1-12 Team Members Phone Support</p>
+                <div class="padding-button">
+                <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
+            </div>
+            </li>
+            <li class="list__prices">
+                <p class="prices__title">enterprise</p>
+                <p class="prices__cost">$159</p>
+                <p class="prices__cost-addition">per month</p>
+                <p class="prices__discription">Unlimited Team Members 24/ 7 Phone Support</p>
+                <div class="padding-button">
+                <p class="prices__button"><a href="#" style="text-decoration: none; color: #FFFFFF;">purchase</a></p>
+            </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    <script src="./dist/js/scripts.min.js"></script>
 </body>
 
 </html>

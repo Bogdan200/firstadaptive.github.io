@@ -1,0 +1,25 @@
+@import "mixins";
+@import "variables";
+
+.free-download-button {
+    border: 1px solid transparent;
+    @include button-shape;
+    @media (max-width: $max-mobile-width) {
+        width: calc(80vw - 20px);
+    }
+    @media (min-width: $min-tablet-width) {
+        width: 390px;
+    }
+    margin:auto;
+    position:relative;
+    top:-20px;
+    @include button-link;
+    &__description {
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        line-height: 16px;
+        @include font-gray;
+        padding-bottom: 30px;
+    }
+}
