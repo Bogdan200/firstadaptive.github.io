@@ -78,7 +78,7 @@
         margin:auto;
         &::after {
             content: "";
-            position:absolute;
+            position:relative;
             display:block;
             padding-top:15px;
             height:0;
