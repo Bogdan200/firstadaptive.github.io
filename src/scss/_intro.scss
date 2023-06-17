@@ -151,8 +151,8 @@
                 @include font-nav-mobile;
                 line-height:50px;
                 color: white;
-                &:active, &:focus {
-                    color:$color-purple;
+                &:active, &:focus, &:hover {
+                    color: $color-purple;
                     &::before{
                         content: "";
                         display: block;
@@ -163,6 +163,7 @@
                         border: 3px solid $color-purple;
                     }
                 }
+                
                 }
             }
 

@@ -34,7 +34,9 @@
         &__element {
             padding: 10px;
             width:100%;
+            box-sizing:border-box;
             @media (max-width: $max-mobile-width) {
+                box-sizing:border-box;
                 width: 100%;
                 padding: 10px;
             }
@@ -48,6 +50,7 @@
         &__description {
             width: 100%;
             padding-bottom: 10px;
+            box-sizing:border-box;
             @include font-testimonials-description;
             
         }
@@ -75,13 +78,13 @@
         margin:auto;
         &::after {
             content: "";
-            position:relative;
-            top: 15px;
+            position:absolute;
             display:block;
+            padding-top:15px;
             height:0;
             margin:auto;
             width: 80%;
-            border:1px solid $color-pseudoelem;
+            border-bottom:2px solid $color-pseudoelem;
         }
     }
 }

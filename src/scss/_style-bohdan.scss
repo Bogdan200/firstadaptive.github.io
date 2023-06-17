@@ -380,7 +380,11 @@
 }
 
 .subscription {
-    background: #643f67;
+    background: url(./../../dist/img/layer-2.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-clip: border-box;
+    background-position-y: -35px;
     padding-bottom: 10px;
 
     &__title {
