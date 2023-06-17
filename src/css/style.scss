@@ -1,3 +1,7 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
 .container {
     width: 100%;
     box-sizing: border-box;
@@ -5,7 +9,6 @@
 
 .revolutionary {
     max-width: 83%;
-    /* 100% - (7.5% + 7.5%) = 85% */
     margin-left: 6.5%;
     margin-right: 6.5%;
     margin-top: 80px;
@@ -13,11 +16,11 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         margin-top: 93.5px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         margin-top: 66px;
     }
 
@@ -31,14 +34,14 @@
         text-align: center;
         color: #635C73;
 
-        @media (min-width:768px) {
+        @media (min-width:$tablet) {
             font-style: normal;
             font-weight: 700;
             font-size: 42px;
             line-height: 42px;
         }
 
-        @media (min-width:1200px) {
+        @media (min-width:$desktop) {
             font-style: normal;
             font-weight: 700;
             font-size: 54px;
@@ -58,14 +61,7 @@
         margin: auto;
         margin-top: 33px;
 
-        @media (min-width: 768px) {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 21px;
-            line-height: 32px;
-        }
-
-        @media (min-width: 1200px) {
+        @media (min-width: $tablet) {
             font-style: normal;
             font-weight: 400;
             font-size: 21px;
@@ -84,38 +80,28 @@
         margin-bottom: 70px;
 
         .watch {
-            display: block;
-            width: 118px;
-            height: 26px;
+            @include icons-sizing-wrap;
             margin-right: 10px;
 
             img {
-                width: 118px;
-                height: 26px;
+               @include icons-sizing;
             }
         }
 
         .star {
-            display: block;
-            width: 118px;
-            height: 26px;
+            @include icons-sizing-wrap;
             margin-right: 10px;
 
             img {
-                width: 118px;
-                height: 26px;
+                @include icons-sizing;
             }
         }
 
         .fork {
-            display: block;
-            width: 118px;
-            height: 26px;
-
+            @include icons-sizing-wrap;
 
             img {
-                width: 118px;
-                height: 26px;
+                @include icons-sizing;
             }
         }
     }
@@ -125,7 +111,7 @@
     padding-bottom: 72px;
     position: relative;
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         background: #F4F4F4;
         max-width: 100%;
     }
@@ -141,22 +127,21 @@
     color: #8D81AC;
     margin-bottom: 36px;
 
-    max-width: 83%;
-    margin-left: 6.5%;
+
     margin-right: 6.5%;
     margin-top: 80px;
     padding-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
 
-    @media (min-width:768px) {
+    @include sizing;
+
+    @media (min-width:$tablet) {
         font-style: normal;
         font-weight: 700;
         font-size: 42px;
         line-height: 44px;
     }
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
@@ -172,12 +157,9 @@
 }
 
 .first-wrapper {
-    max-width: 83%;
-    margin-left: 6.5%;
-    margin-left: auto;
-    margin-right: auto;
+    @include sizing;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         display: flex;
 
         &__margin {
@@ -185,7 +167,7 @@
         }
     }
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         display: flex;
         position: relative;
 
@@ -205,12 +187,12 @@
         margin-top: 27px;
         margin-bottom: 14px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
             line-height: 21px;
         }
 
-        @media (min-width:1200px) {
+        @media (min-width:$desktop) {
             margin-top: 0;
             padding-top: 98.17px;
 
@@ -218,35 +200,25 @@
     }
 
     &__discription {
-
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-        color: #848E97;
+        @include discription-second-section;
         margin-bottom: 38px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
         }
-
-        @media (min-width:1200px) {}
     }
 }
 
 .image {
-
-
     display: flex;
     justify-content: center;
     margin: auto;
 
-    @media (min-width:768px) {
+    @media (min-width:$tablet) {
         display: block;
     }
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         display: block;
         margin-left: 90px;
         margin-right: 44px;
@@ -254,12 +226,9 @@
 }
 
 .second-wrapper {
-    max-width: 83%;
-    margin-left: 6.5%;
-    margin-left: auto;
-    margin-right: auto;
+    @include sizing;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         display: flex;
 
         &__margin {
@@ -267,7 +236,7 @@
         }
     }
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         display: flex;
 
         &__margin {
@@ -286,34 +255,26 @@
         margin-top: 27px;
         margin-bottom: 14px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
             line-height: 21px;
         }
     }
 
     &__discription {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-        color: #848E97;
+        @include discription-second-section;
         margin-bottom: 38px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
         }
     }
 }
 
 .third-wrapper {
-    max-width: 83%;
-    margin-left: 6.5%;
-    margin-left: auto;
-    margin-right: auto;
+    @include sizing;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         display: flex;
 
         &__margin {
@@ -321,7 +282,7 @@
         }
     }
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         display: flex;
 
         &__margin {
@@ -339,34 +300,26 @@
         margin-top: 27px;
         margin-bottom: 14px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
             line-height: 21px;
         }
     }
 
     &__discription {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-        color: #848E97;
+        @include discription-second-section;
         margin-bottom: 38px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
         }
     }
 }
 
 .fourth-wrapper {
-    max-width: 83%;
-    margin-left: 6.5%;
-    margin-left: auto;
-    margin-right: auto;
+    @include sizing;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         display: flex;
 
         &__margin {
@@ -374,7 +327,7 @@
         }
     }
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         display: flex;
 
         &__margin {
@@ -392,23 +345,18 @@
         margin-top: 27px;
         margin-bottom: 14px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
             line-height: 21px;
         }
     }
 
     &__discription {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-        color: #848E97;
+        @include discription-second-section;
         margin-bottom: 38px;
         position: relative;
 
-        @media (max-width: 768px) {
+        @media (max-width: $tablet) {
             text-align: center;
         }
     }
@@ -418,7 +366,7 @@
     display: flex;
     justify-content: right;
 
-    @media (min-width:1200px) {
+    @media (min-width:$desktop) {
         position: absolute;
         right: 0;
         top: 250px;
@@ -426,7 +374,7 @@
 }
 
 .extra {
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         padding-top: 92.17px;
     }
 }
@@ -446,13 +394,13 @@
         padding-top: 14px;
         margin-bottom: 32px;
 
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
             padding-top: 88px;
             font-size: 42px;
             margin-bottom: 39px;
         }
 
-        @media (min-width:1200px) {
+        @media (min-width:$desktop) {
             padding-top: 83px;
             margin-bottom: 112px;
             font-size: 48px;
@@ -461,20 +409,11 @@
     }
 
     &__list {
-        &__list:hover {
-            width: 299px;
-            height: 560px;
-            background: #463048;
-            mix-blend-mode: normal;
-            opacity: 0.84;
-        }
-
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
-
 
         .list__prices {
             display: block;
@@ -484,14 +423,10 @@
             mix-blend-mode: normal;
             margin-bottom: 18px;
 
-
-            @media (min-width:768px) {
+            @media (min-width:$tablet) {
                 margin: 0 18px;
                 margin-bottom: 71px;
             }
-
-
-
 
             .prices__title {
                 font-family: 'Montserrat';
@@ -578,12 +513,6 @@
 
             .padding-button {
                 padding-bottom: 67px;
-            }
-
-            .list__prices:hover {
-                transform: scale(1.5);
-                width: 299px;
-                height: 560px;
             }
         }
     }
