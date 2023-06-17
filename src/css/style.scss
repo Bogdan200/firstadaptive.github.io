@@ -78,10 +78,11 @@
         display: flex;
         justify-content: center;
         margin-bottom: 70px;
+        flex-wrap: wrap;
+        gap: 10px;
 
         .watch {
             @include icons-sizing-wrap;
-            margin-right: 10px;
 
             img {
                @include icons-sizing;
@@ -90,7 +91,6 @@
 
         .star {
             @include icons-sizing-wrap;
-            margin-right: 10px;
 
             img {
                 @include icons-sizing;
